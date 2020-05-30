@@ -20,6 +20,7 @@ class Account:
         print(f'your current balance is {self._amounts[acc]}')
 
 class Transaction(Account):
+    """inheritence test"""
     def make_transaction(self, acc ,option,amount):
         if option == "1":
             self._amounts[acc] = self._amounts[acc] + amount
@@ -50,7 +51,6 @@ while True:
                 amount = int(input("Enter the amount: "))
                 t.make_transaction(acc,option,amount)
                 t.show_details(acc)
-            # print(f"Your current balance is {current_amount}.")
 
 
         else:
